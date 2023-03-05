@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro da liga dos Astronautas</title>
+</head>
+<body>
+   <h3>Cadastro da liga dos Astronautas</h3>
+   <form action="">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+    </div>
+    <br>
+    <div>
+        <label for="Email">Email:</label>
+        <input type="email" name="email" id="email">
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+    </div>
+    <br>
+    <div>
+        <label for="data">data de nascimento</label>
+        <input type="date" name="birthday" id="birthday">
+- 
+        <label for="photo">Foto</label>
+        <input type="file" name="photo" id="photo">
+    </div><br>
+
+    <div>
+        <label for="nationality">Nacionalidade</label>
+        <select name="nationality" id="nationality">
+            <option value="russian">Russa</option>
+            <option value="american">Americano</option>
+            <option value="brazilian">Brasileiro</option>
+            <option value="Portugese">Português</option>
+        </select>  - 
+
+        Genero:
+        <label for="female">f</label>
+        <input type="radio" name="female" id="female" value="female">
+        <label for="male">M</label>
+        <input type="radio" name="male" id="male" value="male">
+    </div><br>
+    <div>
+        Suas principais qualidades: <br>
+        <label for="int">Inteligência</label>
+        <input type="checkbox" name="int" id="int">
+        /
+        <label for="res">Resiliência</label>
+        <input type="checkbox" name="res" id="res">
+        /
+        <label for="prep">Preparo físico</label>
+        <input type="checkbox" name="prep" id="prep">
+        /
+        <label for="educ">Educação</label>
+        <input type="checkbox" name="educ" id="educ">
+    </div><br>
+
+    <div>
+        <textarea name="description" id="description" cols="30" rows="10" placeholder="Porque você gostaria de se tornar um Astronauta?"></textarea>
+    </div><br>
+    <div>
+        <input type="submit">
+    </div>
+
+
+   </form> 
+</body>
+</html>
+<!--Bom, este foi um exercicio que tive dificuldades pois não lembrei as funcionalidades
+de daca input e onde inserir label, assistindo a resolução em continuidade ao curso
+entendi que
+    1° iniciamos um <form> e podemos dividi-lo com <div> divs para facilitar sua visualização
+    2° dentro do <form> podemos inserir o atributo action="" e dar um destino para os dados do form
+como por exemplo uma pesquisa que sera redirecionada ao google recebe o 
+<form action"https//www.google.com/search"> então o que for inserido no input sera redirecionado ao Google
+como pesquisa   
+    3° o <label> recebe alguns atributos como for="" que receberão os valores do input
+    4° os valores que o input recebe vem do type="" que pode ser type="email", type="text"
+type="password"    
+    5° o nome informado no for do label deve ser inserido no type="" com os atributos
+    name="" e id=""(sempre contendo o mesmo nome do for)
+    6° dica: sempre que possivel use o Inglês para que o código esteja legivel para qualquer pessoa de qualquer pais
+    7° para criação de campo com diverças seleções como Pais ou Cidade usamos a Tag <Select> que tem a mesma estrutura do input
+porém é acompanhada do <option value=""> que recebe os valores que desejamos exibir para seleção
+como no exemplo das linhas 32 a 40  
+-->
